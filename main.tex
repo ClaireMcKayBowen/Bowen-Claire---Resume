@@ -1,4 +1,4 @@
-\documentclass[11.5pt, letterpaper, roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\documentclass[12, letterpaper, roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
 \moderncvstyle{banking} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{black} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
@@ -10,6 +10,9 @@
 \usepackage[margin=.90in]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+% New Commands
+\newcommand{\workspace}{\vspace{3pt}}
 
 % Page Number
 \usepackage{lastpage}
@@ -27,61 +30,71 @@
 \vspace{10pt}
 \hrule
 \vspace{8pt}
-\centerline{\small Email: cbowen@urban.org | Website: \href{https://www.clairemckaybowen.com}{www.clairemckaybowen.com} | Last Updated: \today}
+\centerline{\small Email: cbowen@urban.org | Website: \href{https://www.clairemckaybowen.com}{www.clairemckaybowen.com} | Updated: \today}
 \vspace{8pt}
 \hrule
 
-\section{Executive Summary}
-\begin{itemize}
-    \item Highly motivated applied and computational statistician with an infectious enthusiasm for data privacy research with proven leadership experience.
-    
-    \vspace{4pt}
-    \item 7 years experience developing and evaluating differentially private data synthesis methods.
-    
-    \vspace{4pt}
-     \item Organized STEM Outreach programs for over 10 years, reaching out to thousands of K-12 students. 
-    % \vspace{4pt}
-    % \item Fluent in R, R Shiny, HTML5, CSS, and Bootstrap 4.
-    
-\end{itemize}
+% \section{Executive Summary}
+% \begin{itemize}
+%     \item Highly motivated applied and computational statistician with an infectious enthusiasm for data privacy and confidentiality research with proven leadership experience.
+%     \item 10 years experience developing and evaluating differentially private data synthesis methods.
+%      \item Organized STEM Outreach programs for 15 years, reaching out to thousands of K-12 students. 
+%     % \vspace{4pt}
+%     % \item Fluent in R, R Shiny, HTML5, CSS, and Bootstrap 4.
+% \end{itemize}
 
 \section{Education}
-\cventry{}{Ph.D. Applied and Computational Mathematics and Statistics (ACMS)}{University of Notre Dame \textnormal{- Notre Dame, IN}}{\textnormal{\textit{May 2018}}}{}{
+\cventry{}{Ph.D. Applied and Computational Mathematics and Statistics}{University of Notre Dame \textnormal{- Notre Dame, IN}}{\textnormal{\textit{May 2018}}}{}{
 \underline{Advisor}: \href{http://acms.nd.edu/people/faculty/fang-liu/}{Dr. Fang Liu}\\
 \underline{Dissertation Topic}: Data Privacy via Integration of Differential Privacy and Data Synthesis}
 
-\vspace{4pt}
+\workspace
 \cventry{}{M.S. Applied and Computational Mathematics and Statistics | GPA: 3.91/4.00}{University of Notre Dame \textnormal{- Notre Dame, IN}}{\textnormal{\textit{May 2015}}}{}{}
 
-\vspace{4pt}
+\workspace
 \cventry{}{Honors B.S. Mathematics and Physics | Minor: Statistics | High Honors: Top 5\% | GPA: 3.94/4.00}{Idaho State University \textnormal{- Pocatello, ID}}{\textnormal{\hspace{-25pt}\textit{Dec. 2012}}}{}{}
 
 \section{Professional Experience}
-\cventry{}{Lead Data Scientist, Privacy and Data Security}{Urban Institute}{\textnormal{\textit{Dec. 2019 - Present}}}{}{
+
+\textbf{Urban Institute} \hfill \textit{Dec. 2019 - Present}\\
+\textit{Principal Research Associate and Statistics Methods Group Lead} \hfill \textit{Oct. 2021 - Present}\\
+\textit{Lead Data Scientist, Privacy and Data Security} \hfill \textit{Dec. 2019 - Oct. 2021}
     \begin{itemize}
-        \item Co-leading a multi-year project with the IRS to create synthetic versions of the income tax return database, assess the quality and privacy guarantee of the generated synthetic data, and develop methods for researchers to access confidential administrative data safely and securely.
-        \item Managing a data privacy project on generating synthetic data on employer and employee industry data in rural communities in collaboration with the Bureau of Labor Statistics.
-        \item Creating and designing an interactive dashboard to assess and evaluate the 2020 Decennial Census population results in collaboration with Georgetown University.
-        \item Developing a body of work on data privacy and confidentiality communications.
-    \end{itemize}}
+        \item Leading a multi-year project with the IRS to create synthetic versions of the income tax return database, assess the quality and privacy guarantee of the generated synthetic data, and develop new methods for researchers to access confidential administrative data safely and securely.
+        \item Managing multiple data privacy and confidentiality projects on generating differentially private synthetic data on employer and employee industry data in rural communities in collaboration with the Bureau of Labor Statistics and Bureau of Economic Analysis.
+        \item Leading the Statistical Methods Group that provides consulting services for Urban Institute, such as reviewing proposals, brainstorming ideas, and identifying appropriate statistical analyses.
+        % \item Developing a body of work on data privacy and confidentiality communications, which includes blogs, research briefs, and a book.
+        \item Developed and hosted a six part training series on synthetic data and differential privacy for Bureau of Economic Analysis staff.
+        \item Designed an interactive dashboard to assess and evaluate the 2020 Decennial Census population results in collaboration with Massive Data Institute at Georgetown University.
+        \item Created a set of tools and resources on how to virtually teach kids about data, data science, and data visualization for 3rd-12th grade teachers.
+    \end{itemize}
 
-\vspace{4pt}
-\cventry{}{Postdoctoral Research Associate}{Los Alamos National Laboratory (LANL) - Los Alamos, NM}{\textnormal{\textit{\hspace{-1cm}June 2018 - Dec. 2019}}}{}
-{\underline{Advisors}: Dr. Joanne Wendelberger and Dr. Earl Lawrence
-\begin{itemize}
-    \item Evaluate various differentially private data synthesis methods and quality metric algorithms to assess practical applications.
-    \item Develop new methods of functional data analysis and human-in-the-loop for iterative design.
-    \item Investigate the reliability of computer hardware such as cosmic ray effects on supercomputers e.g. Trinity.
-    \item Analyze Texas Pre-K to college longitudinal education data to identify attributes for success.
-    \item Explored and improved component reliability modeling within a Bayesian Framework.
-\end{itemize}}
+\workspace
 
-\vspace{4pt}
-\cventry{}{Graduate Research Assistant }{U.S. Census Bureau - Suitland, MD}{\textnormal{\textit{Aug. 2016 - Oct. 2016}}}{}
-{\underline{Mentors}: Dr. Tommy Wright and Dr. Martin Klein
+\textbf{Stonehill College - School of Business} \hfill \textit{June 2022 - Present}\\
+\textit{Adjunct Professor}
 \begin{itemize}
-\item Implemented methods of data privacy and confidentiality to U.S. Census Bureau data; specifically, applying model-based differentially private data synthesis methods.
-\end{itemize}}
+    \item Teaching duties included preparing a syllabus, creating a new course, lecturing, assigning homework, writing exams, and holding office hours.
+\end{itemize}
+
+\workspace 
+
+\textbf{Los Alamos National Laboratory} \hfill \textit{June 2018 - Dec. 2019}\\
+\textit{Postdoctoral Research Associate}
+% \underline{Advisors}: Dr. Joanne Wendelberger and Dr. Earl Lawrence
+\begin{itemize}
+        \item Evaluated various differentially private data synthesis methods and quality metric algorithms to assess practical applications.
+        \item Developed new methods of functional data analysis, human-in-the-loop, and uncertainty quantification for iterative design.
+        \item Investigated the reliability of computer hardware such as cosmic ray effects on supercomputers e.g. Trinity (no. 5 fastest supercomputer upon installment).
+        \item Analyzed and evaluated Texas Pre-K to college longitudinal education data to identify attributes for success.
+\end{itemize}
+
+% \vspace{4pt}
+% \cventry{}{Graduate Research Assistant }{U.S. Census Bureau - Suitland, MD}{\textnormal{\textit{Aug. 2016 - Oct. 2016}}}{}
+% {\underline{Mentors}: Dr. Tommy Wright and Dr. Martin Klein
+% \begin{itemize}
+% \item Implemented methods of data privacy and confidentiality to U.S. Census Bureau data; specifically, applying model-based differentially private data synthesis methods.
+% \end{itemize}}
 
 % % \vspace{4pt}
 % \cventry{}{Graduate Research Assistant}{Los Alamos National Laboratory (LANL) - Los Alamos, NM}{\textnormal{\textit{May 2015 - July 2015}}}{}
@@ -101,15 +114,18 @@
 % \end{itemize}}
 
 \newpage
-\section{Recent Publications \& Invited Presentations}
+\section{Select Publications \& Invited Presentations}
 \begin{etaremune}[topsep=0pt, itemsep=4pt, partopsep=0pt, parsep=0pt]
+
+    \item \textbf{Bowen, CMK.} ``Protecting Your Privacy in a Data-Driven World.'' (Nov. 2021) \textit{Routledge-CRC Press}, American Statistical Association-CRC Series on Statistical Reasoning in Science and Society. \textbf{Book}
+    
+    \item \textbf{Bowen, CMK.}, Bryant, V., Burman, L., Czajka, J., Khitatrakun, S., MacDonald, G., McClelland, R., Mucciolo, L., Pickens, M., Ueyama, K., Williams, A., Wissoker, D., and Zwiefel, N. (2022) ``Synthetic Individual Income Tax Data: Methodology, Utility, and Privacy Implications.'' to appear in  \textit{International Conference on Privacy in Statistical Databases}.
+    
+    \item \textbf{Bowen, CMK} and Garfinkel, S. (2021) ``The Philosophy of Differential Privacy.'' \textit{Notices of the American Mathematical Society}, 68(10), pages 1727-1739.\\
+    doi: 10.1090/noti2363
 
     \item \textbf{Bowen, CMK.} and Snoke, J. (2021) ``Comparative Study of Differentially Private Synthetic Data Algorithms from the NIST PSCR Differential Privacy Synthetic Data Challenge.'' \textit{Journal of Privacy and Confidentiality}, 11 (1).\\
     doi: 10.29012/jpc.748
-
-    \item \textbf{Bowen, CMK.}, Bryant, V., Burman, L., Khitatrakun, S., McClelland, R., Stallworth, P., Ueyama, K., Williams, A. (2020) ``A Synthetic Supplemental Public Use File of Low-Income Information Return Data: Methodology, Utility, and Privacy Implications.'' \textit{International Conference on Privacy in Statistical Databases} (pp. 257-270). Springer, Cham.
-    
-    \item Liu, F., Eugenio, E., Jin, I., and \textbf{Bowen, CMK}. (2020) ``Differentially Private Generation of Social Networks via Exponential Random Graph Models.'' \textit{Proceedings of 2020 IEEE 44th Annual Computers, Software, and Applications Conference (COMPSAC)}, Pages:1695-1700, DOI 10.1109/COMPSAC48688.2020
 
     \item \textbf{Bowen, CMK.} and Liu, F. (2020) ``Comparative Study of Differentially Private Data Synthesis Methods.'' \textit{Statistical Science}, 35(2):280-307.
 
@@ -118,46 +134,51 @@
 \rule{\textwidth}{0.1pt}
 \begin{etaremune}[topsep=0pt, itemsep=4pt, partopsep=0pt, parsep=0pt]
 \smallskip
-  \item Nov. 2020. \textit{Data Privacy in the Real World}. Statistics Seminar Series, Bureau of Labor Statistics, Virtual.
-  
-  \item June 2020. \textit{Telling a Visual Story in Big Data: Case Studies on Interactive Visualizations for Supercomputer Data}. Symposium on Data Science and Statistics, Virtual.
-  
-  \item April 2020. \textit{Differential Privacy: What is it?} Women in Data Science Conference, the Virginia Tech at Blacksburg, VA.
-  
-  \item Feb. 2020. \textit{Comparative Study of Differentially Private Synthetic Data Algorithms and Evaluation Standards}. Statistics Colloquia, University of California-Riverside at Riverside, CA.
+    
+    \item April 2022. \textit{A Feasibility Study of Differentially Private Summary Statistics and Regression Analyses for Administrative Tax Data}. Noisy Measurements Research Workshop, Rutgers University at New Brunswick, NJ.
+    
+    \item March 2022. \textit{Safely Expanding Research Access to Administrative Tax Data}. Neyman Seminar Series, University of California Berkeley, Virtual.
+    
+    \item Feb. 2022. \textit{Personal Privacy and the Public Good}. Association for the Advancement of Artificial Intelligence Workshop of Privacy Preserving Artificial Intelligence. \textbf{Keynote}
+    
+    \item Nov. 2021. \textit{Protecting Your Privacy in a Data-Driven World}. Biostatistics Seminar Series, Johns Hopkins University at Baltimore, MD.
   
 \end{etaremune}
 
 \section{Select Grants \&  Fellowships}
 
-    \vspace{2pt}
-    \cventry{}{Economic Institutions, Behavior, and Performance | \$400,000}{Alfred P. Sloan Foundation}{\textnormal{\textit{Nov. 2020 - Oct. 2022}}}{}{
-    \underline{Project:} 
-    Development and Deployment of a Prototype Validation Server for Administrative Tax Data\\
-    \underline{PI:} Claire McKay Bowen\\
-    \underline{Co-PIs:} Leonard Burman and Graham MacDonald
+    \vspace{4pt}
+    \cventry{}{Economic Institutions, Behavior, and Performance | Grant No: G-2022-17149 | \$500,000}{Alfred P. Sloan Foundation}{\textnormal{\hspace{-1.5cm}\textit{May 2022 - April 2025}}}{}
+    { 
+        \underline{Project:} Build and Improve Synthetic Datasets Based on Administrative Tax Data\\
+        \underline{Role:} Principal Investigator
+    }
+
+    \vspace{4pt}    
+    \cventry{}{NSF National Center for Science and Engineering Statistics | \$1.5 million}{National Science Foundation}{\textnormal{\textit{April 2022 - March 2025}}}{}
+    {
+        \underline{Project:} Building a Validation Server for Administrative Tax Data | 
+        \underline{Role:} Principal Investigator
+        % PI: Claire McKay Bowen, Co-PIs: Leonard Burman and Graham MacDonald
     }
     
-    \vspace{2pt}
-    \cventry{}{Tableau Foundation | \$470,000}{Tableau and Salesforce}{\textnormal{\textit{Jan. 2021 - Sept. 2021}}}{}{
-    \underline{Project:} Decennial Dashboard\\
-    \underline{PI:} Claire McKay Bowen\\
-    \underline{Co-PIs:} Amy O'Hara
+    \vspace{4pt}
+     \cventry{}{Tableau Foundation | \$470,000}{Tableau and Salesforce}{\textnormal{\textit{Jan. 2021 - Dec. 2021}}}{}
+    {
+        \underline{Project:} Decennial Dashboard | 
+        \underline{Role:} Co-Principal Investigator
+        % Co-PIs: Claire McKay Bowen and Amy O'Hara
     }
     
-    \vspace{2pt}
-    \cventry{}{NSF National Center for Science and Engineering Statistics| \$600,000}{National Science Foundation (NSF)}{\textnormal{\textit{Oct 2020 - Sept. 2021}}}{}{
-    \underline{Project:} Planning and Development of a Prototype Privacy-Preserving Validation Server for Administrative Tax Data\\
-    \underline{PI:} Claire McKay Bowen; \underline{Co-PIs:} Leonard Burman and Graham MacDonald
+    \vspace{4pt}
+    \cventry{}{Regional Income Division | \$250,000}{Bureau of Economic Analysis}{\textnormal{\textit{Sept. 2021 - Aug. 2022}}}{}
+    {
+        Data Privacy Education Materials and Training | 
+        \underline{Role:} Principal Investigator
+        % PI: Claire McKay Bowen, Co-PI: Aaron R. Williams
     }
     
-\vspace{2pt}
-    \cventry{}{NIST Public Safety Communications Research | \$100,000}{National Institute of Standards and Technology (NIST)}{\textnormal{\textit{Oct. 2019 - Jan. 2020}}}{}{
-    \underline{Project:} Comparative Study of Differentially Private Synthetic Data Algorithms and Evaluation Standards\\
-    \underline{PIs:} Claire McKay Bowen
-    }
-    
-\vspace{2pt}
+    \vspace{4pt}
     \cventry{}{National Science Foundation | Grant No. DGE-1313583 | \$138,000}{National Science Foundation Graduate Research Fellowship}{\textnormal{\textit{May 2015}}}{}{}
 
 % \vspace{4pt}
